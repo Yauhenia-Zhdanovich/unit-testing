@@ -1,7 +1,7 @@
 module.exports = {
-  equal(actual, expected, message) {
+  equal(actual, expected) {
     if (actual !== expected) {
-      throw new Error(message);
+      throw new Error('test failed!!!');
     }
   }
 };

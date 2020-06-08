@@ -1,9 +1,29 @@
-const isPrime = require('./is-prime.js');
+const isPrime = require('./is-prime');
 const assert = require('./assert');
+const { describe, it } = require('./describe');
 
-assert.equal(isPrime(3), true, '3 is a prime number');
-assert.equal(isPrime(11), true, '11 is a prime number');
-assert.equal(isPrime(12), false, '12 is not a prime number');
-assert.equal(isPrime(190), false, '190 is not a prime number');
-assert.equal(isPrime(29), true, '29 is a prime number');
-assert.equal(isPrime(33), false, '33 is not a prime number');
+describe('Is the number Prime', function() {
+  it('3 should be a prime number', function() {
+    assert.equal(isPrime(3), true);
+  });
+
+  it('33 should not be a prime number', function() {
+    assert.equal(isPrime(3), true);
+  });
+
+  it('11 should be a prime number', function() {
+    assert.equal(isPrime(3), true);
+  });
+
+  it('12 should not be a prime number', function() {
+    assert.equal(isPrime(3), true);
+  });
+
+  it('190 should not be a prime number', function() {
+    assert.equal(isPrime(3), false);
+  });
+
+  it('29 should be a prime number', function() {
+    assert.equal(isPrime(3), true);
+  });
+});
